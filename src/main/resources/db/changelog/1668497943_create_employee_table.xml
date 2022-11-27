@@ -1,0 +1,41 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="1668497943-1" author="Martik Patel">
+        <createTable tableName="db_employee">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="emp_first_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_last_name" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_mobile_number" type ="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_email" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_department" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_salary" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_designation" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emp_code" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
